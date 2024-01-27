@@ -2,6 +2,15 @@ var oldValue = "";
 var isClicked = false;
 
 function btnClick(val) {
+  //   normal(val);
+  modified(val);
+}
+
+function normal(val) {
+  document.getElementById("screen").value += val;
+}
+
+function modified(val) {
   var operand = document.getElementById("screen").value;
   oldValue += val;
   if (val == "+" || val == "-" || val == "*" || val == "/") {
@@ -12,16 +21,10 @@ function btnClick(val) {
   if (isClicked) {
     document.getElementById("screen").value = val;
     isClicked = false;
-    // document.getElementById("screen").value = "";
   } else {
     document.getElementById("screen").value += val;
   }
 }
-
-function normal(val) {
-  document.getElementById("screen").value += val;
-}
-
 function clearScreen() {
   document.getElementById("screen").value = "";
   oldValue = "";
