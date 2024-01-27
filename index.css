@@ -1,0 +1,41 @@
+/* .main{
+    display: grid;
+    align-items: center;
+    place-items: center;
+} */
+*{
+    margin: auto;
+    padding: 0;
+}
+.calc {
+    margin-left: auto;
+    width: 400px;
+    height: 500px;
+    background-color: rgba(35, 36, 31, 0.821);
+    border-radius: 15px;
+    /* padding: 2px; */
+}
+.buttons {
+    padding: 20px;
+}
+.screen{
+    /* width: 100%; */
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 80%;
+    height: 50px;
+    pointer-events: none;
+}
+
+.buttons{
+    margin-top: 20px;
+    margin-left: 40px;
+    
+}
+
+.btn {
+margin: 5px;
+    height: 60px;
+    width: 60px;
+    background-color: blueviolet;
+}
